@@ -94,7 +94,7 @@ if (WIN32)
     log_rpath_from_dir(OPENCV "\\opencv\\x64\\vc14\\bin")
     set( ENV{OpenCV_DIR} ${OPENCV} )
 elseif(LINUX)
-if (${LINUX_OS_NAME} STREQUAL "Ubuntu 16.04")
+if (${LINUX_OS_NAME} STREQUAL "Ubuntu 18.04")
     RESOLVE_DEPENDENCY(OPENCV
             ARCHIVE_LIN "opencv_3.4.3_ubuntu16.tar.bz2"
             TARGET_PATH "${TEMP}/opencv_ubuntu16"
